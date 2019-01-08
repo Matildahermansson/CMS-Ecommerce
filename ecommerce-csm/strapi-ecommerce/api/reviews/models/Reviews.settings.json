@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "reviews",
+  "info": {
+    "name": "reviews",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Comment": {
+      "default": "",
+      "type": "text"
+    },
+    "Rating": {
+      "default": 0,
+      "type": "integer",
+      "max": 5
+    },
+    "products": {
+      "model": "products",
+      "via": "reviews"
+    }
+  }
+}
